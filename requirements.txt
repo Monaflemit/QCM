@@ -1,5 +1,5 @@
 streamlit
-IPython.display
+IPython
 io
 sys
 re
