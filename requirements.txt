@@ -1,5 +1,4 @@
 streamlit
-IPython
 io
 sys
 re
