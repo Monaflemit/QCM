@@ -5,3 +5,7 @@ PIL
 nbformat
 streamlit_drawable_canvas
 random
+io
+IPython
+sys
+re
