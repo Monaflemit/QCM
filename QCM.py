@@ -2,7 +2,7 @@
 # streamlit run QCM.py
 import streamlit as st
 from streamlit import write
-from IPython.display import display, Latex
+#from IPython.display import display, Latex
 import io
 import sys
 import re
