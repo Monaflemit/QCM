@@ -1,6 +1,5 @@
 streamlit
 nbformat
 streamlit_drawable_canvas
-io
 sys
 re
