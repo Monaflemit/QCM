@@ -370,7 +370,7 @@ with col2:
     
 
     # Afficher l'image avec le texte sur Streamlit
-    st.image(image, caption='Centre')
+    #st.image(image, caption='Centre')
 
     # Utiliser le canvas pour détecter les zones cliquables
     canvas_result = st_canvas(
