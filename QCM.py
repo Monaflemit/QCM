@@ -372,12 +372,17 @@ with col2:
     # Afficher l'image avec le texte sur Streamlit
     #st.image(image, caption='Centre')
 
+    def pil_to_bytes(img):
+        img_byte_arr = io.BytesIO()
+        img.save(img_byte_arr, format='PNG')
+        return img_byte_arr.getvalue()
+    
     # Utiliser le canvas pour détecter les zones cliquables
     canvas_result = st_canvas(
         fill_color="rgba(255, 165, 0, 0.3)",  # Couleur de remplissage
         stroke_width=0,  # Largeur du trait
         stroke_color="",  # Couleur du trait
-        background_image=None,  #image Image de fond
+        background_image=pil_to_bytes(image),  #image Image de fond
         update_streamlit=True  ,
         height=image.height,
         width=image.width,
